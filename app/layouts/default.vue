@@ -1,17 +1,41 @@
+<script setup lang="ts">
+import type { NavigationMenuItem } from '@nuxt/ui';
+
+const navItems = ref<NavigationMenuItem[]>([
+    {
+        label: 'home',
+        to: '/'
+    },
+    {
+        label: 'About',
+        to: '/about'
+    },
+    {
+        label: 'Projects',
+        to: '/projects'
+    },
+    {
+        label: 'Blog',
+        to: '/blog'
+    },
+    {
+        label: 'Contact',
+        to: '/contact'
+    }
+])
+
+</script>
+
 <template>
     <div class="">
-        <nav class="navigation-bar">
-            <ul class="nav-links">
-                <li class="nav-link">Home</li>
-                <li class="nav-link">About</li>
-                <li class="nav-link">Projects</li>
-                <li class="nav-link">Blog</li>
-                <li class="nav-link">Contact</li>
-            </ul>
-        </nav>
+        <header>
+              <UNavigationMenu :items="navItems" class="w-full justify-center" />
+        </header>
+        <main>
             <slot />
-        <div class="">
+        </main>
+        <footer class="">
             <p>Footer</p>
-        </div>
+        </footer>
     </div>
 </template>
