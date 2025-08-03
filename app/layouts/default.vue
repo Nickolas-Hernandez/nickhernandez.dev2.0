@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui';
 
+
 const navItems = ref<NavigationMenuItem[]>([
     {
         label: 'Home',
@@ -27,7 +28,7 @@ const navItems = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-    <div class="">
+    <UContainer class="">
         <header>
               <UNavigationMenu :items="navItems" class="w-full justify-center"/>
         </header>
@@ -37,5 +38,5 @@ const navItems = ref<NavigationMenuItem[]>([
         <footer class="">
             <p>Footer</p>
         </footer>
-    </div>
+    </UContainer>
 </template>
