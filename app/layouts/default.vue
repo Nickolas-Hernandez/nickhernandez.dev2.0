@@ -3,7 +3,7 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 
 const navItems = ref<NavigationMenuItem[]>([
     {
-        label: 'home',
+        label: 'Home',
         to: '/'
     },
     {
@@ -29,7 +29,7 @@ const navItems = ref<NavigationMenuItem[]>([
 <template>
     <div class="">
         <header>
-              <UNavigationMenu :items="navItems" class="w-full justify-center" />
+              <UNavigationMenu :items="navItems" class="w-full justify-center"/>
         </header>
         <main>
             <slot />
