@@ -29,7 +29,7 @@ const navItems = ref<NavigationMenuItem[]>([
 
 <template>
     <UContainer class="">
-        <header>
+        <header class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
               <UNavigationMenu :items="navItems" class="w-full justify-center"/>
         </header>
         <main>

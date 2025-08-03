@@ -1,3 +1,10 @@
+
 <template>
-  <h1>This is the Home page</h1>
+    <div class="">
+        <Hero />
+        <About />
+        <Articles />
+        <Testimonials />
+        <FAQ />
+    </div>
 </template>
