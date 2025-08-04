@@ -7,5 +7,6 @@
         <Articles />
         <!-- <Testimonials /> -->
         <FAQ />
+        <Contact />
     </div>
 </template>
