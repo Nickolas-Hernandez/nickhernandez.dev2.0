@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui';
 
+const { footer } = useAppConfig()
 
 const navItems = ref<NavigationMenuItem[]>([
     {
@@ -35,8 +36,17 @@ const navItems = ref<NavigationMenuItem[]>([
         <main>
             <slot />
         </main>
-        <footer class="">
-            <p>Footer</p>
+        <footer>
+            <UContainer class="flex justify-between pb-4 opacity-75">
+                <small>Copyright @ 2025</small>
+                <div class="">
+                    <UButton
+                    v-for="(link, index) of footer?.links"
+                    :key="index"
+                    v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
+                    />
+                </div>
+            </UContainer>
         </footer>
     </UContainer>
 </template>
