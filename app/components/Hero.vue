@@ -10,7 +10,9 @@ const { footer } = useAppConfig()
             icon="i-lucide-image" 
             alt="Nickolas Hernandez" />
         <h1 class="tracking-tight font-semi-bold text-pretty text-3xl sm:text-4xl lg:text-5xl max-w-md mx-auto pt-4">Hello! I&apos;m Nick Hernandez Web Developer</h1>
-        <p class="max-w-lg mx-auto opacity-75 pt-4">I build custom websites where clean design meets powerful functionality and AI-driven solutions.</p>
+        <p class="max-w-lg mx-auto opacity-75 pt-4">
+            I build custom websites where clean design meets powerful functionality and AI-driven solutions.
+        </p>
         <UButton 
             class="mt-4" 
             color="success"                
