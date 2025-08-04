@@ -17,7 +17,7 @@ import { ULink } from '#components';
             </div>
             <div class="work-experience">
                 <h2 class="text-xl sm:text-2xl">Work Experience</h2>
-                <ul class="space-y-8 mt-4 text-sm">
+                <ul class="space-y-4 mt-4 text-sm">
                     <li class="flex items-center justify-between opacity-75">
                         <span class="">2023 – Present</span>
                         <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
