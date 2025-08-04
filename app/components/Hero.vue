@@ -3,7 +3,7 @@ const { footer } = useAppConfig()
 </script>
 
 <template>
-    <section class="text-center flex flex-col items-center py-18 sm:py-24 lg:py-28">
+    <section class="text-center flex flex-col items-center pt-18 sm:pt-24 lg:pt-28 mb-32">
         <UAvatar 
             src="https://github.com/Nickolas-Hernandez.png" 
             size="3xl" 
