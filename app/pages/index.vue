@@ -3,8 +3,9 @@
     <div class="">
         <Hero />
         <About />
+        <Projects />
         <Articles />
-        <Testimonials />
+        <!-- <Testimonials /> -->
         <FAQ />
     </div>
 </template>
