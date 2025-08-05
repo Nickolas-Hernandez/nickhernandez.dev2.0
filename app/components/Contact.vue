@@ -51,7 +51,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 </script>
 
 <template>
-    <section class="mb-24">
+    <section id="contact" class="py-24">
         <h2 class="text-xl text-center sm:text-2xl max-w-md mx-auto">
         Let&apos;s Build Something Great Together
         </h2>

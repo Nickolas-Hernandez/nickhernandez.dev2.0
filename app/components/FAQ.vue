@@ -99,7 +99,7 @@ const accordianUI = {
 </script>
 
 <template>
-    <section class="mb-24">
+    <section id="faq" class="pt-24">
         <UContainer>
             <h2 class="text-xl sm:text-2xl">Frequently Asked Questions</h2>
             <p class="text-sm opacity-75 mt-4">Quick Q&amp;As about my services and how I work.</p>

@@ -3,7 +3,7 @@ const { footer } = useAppConfig()
 </script>
 
 <template>
-    <section class="text-center flex flex-col items-center pt-18 sm:pt-24 lg:pt-28 mb-32">
+    <section id="hero" class="text-center flex flex-col items-center pt-18 sm:pt-24 lg:pt-28 mb-10">
         <UAvatar 
             src="https://github.com/Nickolas-Hernandez.png" 
             size="3xl" 
@@ -18,7 +18,7 @@ const { footer } = useAppConfig()
             color="success"                
             variant="ghost"
             size="lg" 
-            href="/contact"
+            href="#contact"
             label="Available for new projects">
             <template #leading>
                 <span class="relative flex size-2">

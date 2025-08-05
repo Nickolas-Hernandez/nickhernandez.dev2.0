@@ -4,8 +4,8 @@ import { ULink } from '#components';
 </script>
 
 <template>
-    <section class="flex flex-row justify-between mb-24">
-        <UContainer class="grid md:grid-cols-2 gap-12 items-start">
+    <section id="about" class="flex flex-row justify-between pt-12 md:pt-24">
+        <UContainer class="grid md:grid-cols-2 gap-20 md:gap-12 items-start">
             <div class="about-me">
                 <h2 class="text-xl sm:text-2xl">About Me</h2>
                 <p class="text-sm opacity-75 mt-4">
@@ -19,19 +19,19 @@ import { ULink } from '#components';
                 <h2 class="text-xl sm:text-2xl">Work Experience</h2>
                 <ul class="space-y-4 mt-4 text-sm">
                     <li class="flex items-center justify-between opacity-75">
-                        <span class="">2023 – Present</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
-                        <span>Freelance Web Developer</span>
+                        <span class="flex-1/3">2023 – Present</span>
+                        <span class="flex-1/5 border-t border-borderGray mx-4 opacity-50" />
+                        <span class="flex-1/2">Freelance Web Developer</span>
                     </li>
                     <li class="flex items-center justify-between opacity-75">
-                        <span class="">2021 – 2025</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
-                        <span>Web Developer at <ULink to="https://www.getindio.com/" class="text-success font-medium" target="_blank">Big Rig Media</ULink></span>
+                        <span class="flex-1/3">2021 – 2025</span>
+                        <span class="flex-1/5 border-t border-borderGray mx-4 opacity-50" />
+                        <span class="flex-1/2">Web Developer at <ULink to="https://www.getindio.com/" class="text-success font-medium" target="_blank">Big Rig Media</ULink></span>
                     </li>
                     <li class="flex items-center justify-between opacity-75">
-                        <span class="">2021 – 2022</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
-                        <span>Teaching Assistant at <ULink to="https://learningfuze.com/" class="text-success font-medium" target="_blank">Learning Fuze</ULink></span>
+                        <span class="flex-1/3">2021 – 2022</span>
+                        <span class="flex-1/5 border-t border-borderGray mx-4 opacity-50" />
+                        <span class="flex-1/2">Teaching Assistant at <ULink to="https://learningfuze.com/" class="text-success font-medium" target="_blank">Learning Fuze</ULink></span>
                     </li>
                 </ul>
             </div>
