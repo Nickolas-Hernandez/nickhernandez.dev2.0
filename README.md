@@ -1,75 +1,17 @@
-# Nuxt UI Starter
+# Nick Hernandez Portfolio
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+Welcome to the source code for my personal portfolio website — [nickhernandez.dev](https://nickhernandez.dev).  
+This site showcases my work in **web development**, **consulting**, and **freelance projects**, built with a focus on performance, clarity, and modern web standards.
 
-## Setup
+---
 
-Make sure to install the dependencies:
+## 🚀 Tech Stack
 
-```bash
-# npm
-npm install
+- **Framework**: [Nuxt 4](https://nuxt.com)  
+- **UI Library**: [Nuxt UI](https://ui.nuxt.com)  
+- **Icons**: [@iconify-json/lucide](https://iconify.design) & [@iconify-json/simple-icons](https://iconify.design)  
+- **Images**: [@nuxt/image](https://image.nuxt.com)  
+- **Content Management**: [@nuxt/content](https://content.nuxt.com)  
+- **Linting**: ESLint with TypeScript support  
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
