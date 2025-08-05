@@ -18,7 +18,7 @@ const { footer } = useAppConfig()
             color="success"                
             variant="ghost"
             size="lg" 
-            href="/contact"
+            href="#contact"
             label="Available for new projects">
             <template #leading>
                 <span class="relative flex size-2">
