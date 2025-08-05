@@ -4,8 +4,8 @@ import { ULink } from '#components';
 </script>
 
 <template>
-    <section id="about" class="flex flex-row justify-between pt-24">
-        <UContainer class="grid md:grid-cols-2 gap-12 items-start">
+    <section id="about" class="flex flex-row justify-between pt-12 md:pt-24">
+        <UContainer class="grid md:grid-cols-2 gap-20 md:gap-12 items-start">
             <div class="about-me">
                 <h2 class="text-xl sm:text-2xl">About Me</h2>
                 <p class="text-sm opacity-75 mt-4">
