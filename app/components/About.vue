@@ -20,17 +20,17 @@ import { ULink } from '#components';
                 <ul class="space-y-4 mt-4 text-sm">
                     <li class="flex items-center justify-between opacity-75">
                         <span class="">2023 – Present</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
+                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50" />
                         <span>Freelance Web Developer</span>
                     </li>
                     <li class="flex items-center justify-between opacity-75">
                         <span class="">2021 – 2025</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
+                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50" />
                         <span>Web Developer at <ULink to="https://www.getindio.com/" class="text-success font-medium" target="_blank">Big Rig Media</ULink></span>
                     </li>
                     <li class="flex items-center justify-between opacity-75">
                         <span class="">2021 – 2022</span>
-                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50"></span>
+                        <span class="flex-1 border-t border-borderGray mx-4 opacity-50" />
                         <span>Teaching Assistant at <ULink to="https://learningfuze.com/" class="text-success font-medium" target="_blank">Learning Fuze</ULink></span>
                     </li>
                 </ul>

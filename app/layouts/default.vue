@@ -10,23 +10,23 @@ const navItems = ref<NavigationMenuItem[]>([
     },
     {
         label: 'About',
-        to: '#about'
+        to: '/about'
     },
     {
         label: 'Projects',
-        to: '#projects'
+        to: '/projects'
     },
     {
         label: 'Blog',
-        to: '#articles'
+        to: '/articles'
     },
     {
         label: 'FAQ',
-        to: '#faq'
+        to: '/faq'
     },
     {
         label: 'Contact',
-        to: '#contact'
+        to: '/contact'
     }
 ])
 
@@ -35,7 +35,13 @@ const navItems = ref<NavigationMenuItem[]>([
 <template>
     <UContainer class="max-w-4xl mx-auto px-6 sm:border-x border-default pt-10">
         <header class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
-              <UNavigationMenu :items="navItems" class="w-full justify-center"/>
+            <!-- <UNavigationMenu :items="navItems" class="w-full justify-center hidden md:block"/> -->
+            <!-- <UDrawer class="md:hidden" direction="right">
+                <UButton label="Menu" color="neutral" variant="subtle" trailing-icon="i-lucide-align-justify" />
+                <template #content>
+                    <UNavigationMenu :items="navItems" orientation="vertical" class="w-56"/>
+                </template>
+            </UDrawer> -->
         </header>
         <main>
             <slot />
