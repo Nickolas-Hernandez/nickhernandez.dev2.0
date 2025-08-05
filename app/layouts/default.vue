@@ -10,19 +10,23 @@ const navItems = ref<NavigationMenuItem[]>([
     },
     {
         label: 'About',
-        to: '/about'
+        to: '#about'
     },
     {
         label: 'Projects',
-        to: '/projects'
+        to: '#projects'
     },
     {
         label: 'Blog',
-        to: '/blog'
+        to: '#articles'
+    },
+    {
+        label: 'FAQ',
+        to: '#faq'
     },
     {
         label: 'Contact',
-        to: '/contact'
+        to: '#contact'
     }
 ])
 
