@@ -9,14 +9,14 @@ export default defineContentConfig({
     collections: { 
         projects: defineCollection({
             type: 'page',
-            source: 'projects/*.md',
+            source: { include: 'projects/*.md', prefix: '/projects' },
             schema: z.object({ 
                 ...createBaseSchema,
-                status: z.string(),
-                featured: z.boolean(),
+                status: z.enum(['planned', 'in-progress', 'launched', 'archived']).default('launched'),
+                featured: z.boolean().default(false),
                 client: z.string().optional(),
                 // services
-                // stack
+                stack: z.array(z.string()).default([]),
                 tags: z.array(z.string()).default([]),
                 links: z.object({
                     live: z.string().url().optional(),
