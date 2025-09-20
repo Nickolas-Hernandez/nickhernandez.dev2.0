@@ -1,18 +1,33 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content';
-
-const createBaseSchema = () => z.object({
-    title: z.string(),
-    description: z.string(),
-});
+import { defineCollection, defineContentConfig, z,  } from '@nuxt/content';
 
 export default defineContentConfig({ 
     collections: { 
-        index: defineCollection({
+        content: defineCollection({
             type: 'page',
-            source: 'index.yml',
-            schema: z.object({
-                
+            source: '**/*.md'
+        }),
+        projects: defineCollection({
+            type: 'page',
+            source: 'projects/*.md',
+            schema: z.object({ 
+                status: z.enum(['planned', 'in-progress', 'launched', 'archived']).default('launched'),
+                featured: z.string().optional(),
+                client: z.string().optional(),
+                stack: z.array(z.string()).default([]),
+                tags: z.array(z.string()).default([]),
+                links: z.object({
+                    live: z.string().url().optional(),
+                    repo: z.string().url().optional()
+                }),
+                seo: z.object({
+                    title: z.string().optional(),
+                    description: z.string().optional(),
+                })
             })
-        })
+        }),
+        docs: defineCollection({
+            type: 'page',
+            source: 'docs/**'
+        }),
     },
  });
