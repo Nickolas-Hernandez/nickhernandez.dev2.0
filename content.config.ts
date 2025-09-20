@@ -8,10 +8,10 @@ export default defineContentConfig({
         }),
         projects: defineCollection({
             type: 'page',
-            source: 'projects/**',
+            source: 'projects/*.md',
             schema: z.object({ 
                 status: z.enum(['planned', 'in-progress', 'launched', 'archived']).default('launched'),
-                featured: z.boolean().default(false),
+                featured: z.string().optional(),
                 client: z.string().optional(),
                 stack: z.array(z.string()).default([]),
                 tags: z.array(z.string()).default([]),

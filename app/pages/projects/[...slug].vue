@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const route = useRoute()
 
+console.log("route: ", route.path);
+
 const { data: project } = await useAsyncData(route.path, () => {
     return queryCollection('projects').path(route.path).first()
 })
@@ -9,7 +11,6 @@ const { data: project } = await useAsyncData(route.path, () => {
 <template>
     <section id="projects" class="">
         <UContainer>
-            <p class="text-sm opacity-75 mt-4 italic">Coming soon...</p>
             <ContentRenderer v-if="project" :value="project" />
         </UContainer>
     </section>
